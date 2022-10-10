@@ -17,3 +17,15 @@ const age = 26;
 if (isCitizen && age > 18) {
   console.log('You are eligible to vote.');
 }
+
+const whichSchool = (age) => {
+  if (age > 18) {
+    return 'Lighthouse Labs';
+  }
+
+  if (age >= 13 && age <= 18) {
+    return 'Secondary School';
+  }
+
+  return 'Elementary School';
+};
